@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="generator" content="pandoc">
-    <title>Software Carpentry: COMP3207 - Introduction to Python</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/swc.css" />
-    <link rel="alternate" type="application/rss+xml" title="Software Carpentry Blog" href="http://software-carpentry.org/feed.xml"/>
-    <meta charset="UTF-8" />
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body class="lesson">
-    <div class="container card">
-      <div class="banner">
-        <a href="http://www.ecs.soton.ac.uk" title="Electronics and Computer Science">
-          <img alt="ECS banner" src="img/ecs-logo.png" />
-        </a>
-      </div>
-      <article>
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-                    <a href="index.html"><h1 class="title">COMP3207 - Introduction to Python</h1></a>
-          <h2 class="subtitle">Why Python?</h2>
-          <h2 id="download-some-materials">Download some materials</h2>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+  <title>COMP3207 - Introduction to Python</title>
+
+
+  <script src="js/deckjs-custom.js"></script>
+  <script>
+      // TODO: finer filter on what is needed (vs profile-5)
+      includedeck("css/swc-slides.css", {
+         BEFOREINIT: function() {
+            $(".slide.auto li:not(li li):not(.notslide)").addClass("slide");
+         }
+      });
+  </script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <div class="slide title-slide" data-container-class="no-status">
+        <h1 class="var-title"></h1>
+        <img class="logo" src="img/ecs-logo.png" alt="ECS"/>
+    </div>
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+<section id="download-some-materials" class="slide level2">
+<h1>Download some materials</h1>
 <ul>
 <li>Use a browser to go the following URL and download the materials to your machine: http://users.ecs.soton.ac.uk/stc/COMP3207-materials.zip</li>
 <li>Copy the file to your home directory (or C: if on a Windows machine)</li>
 </ul>
-<h2 id="extract-the-materials">Extract the materials</h2>
+</section>
+<section id="extract-the-materials" class="slide level2">
+<h1>Extract the materials</h1>
 <ul>
 <li>Mac OS X or Linux: type in the following in a shell prompt: cd <path to your home directory> unzip COMP3207-materials.zip cd code</li>
 <li>Windows: double click on the zip file to extract it, then run a command prompt and type: cd <path to your home directory> cd code</li>
 </ul>
-<h2 id="starting-the-python-interpreter">Starting the Python Interpreter</h2>
+</section>
+<section id="starting-the-python-interpreter" class="slide level2">
+<h1>Starting the Python Interpreter</h1>
 <ul>
 <li>The interpreter provides an interactive environment to play with the language</li>
 <li>Mac/Linux: Open a terminal window and type <strong>python</strong></li>
 <li>Windows: Open a command prompt and type <strong>python</strong></li>
 <li>At the prompt type <strong>print ‘hello world!’</strong> <img src="img/hello.png" /></li>
 </ul>
-<h2 id="control-flow-repeating-actions-with-loops">Control Flow: Repeating actions with loops</h2>
+</section>
+<section id="control-flow-repeating-actions-with-loops" class="slide level2">
+<h1>Control Flow: Repeating actions with loops</h1>
 <ul>
 <li>What a loop does?</li>
 <li>Writing loops to repeat simple calculations
@@ -55,7 +61,9 @@
 <li>Track changes to a loop variable as the loop runs</li>
 <li>Track changes to other variables as they are updated by a <code>for</code> loop</li>
 </ul>
-<h2 id="why-indentation">Why indentation?</h2>
+</section>
+<section id="why-indentation" class="slide level2">
+<h1>Why indentation?</h1>
 <ul>
 <li>Studies show that’s what people actually pay attention to
 <ul>
@@ -65,7 +73,9 @@
 <li>Python Style Guide (PEP 8) recommends 4 spaces</li>
 <li>And no tab characters</li>
 </ul>
-<h2 id="lists-in-python">Lists in Python</h2>
+</section>
+<section id="lists-in-python" class="slide level2">
+<h1>Lists in Python</h1>
 <ul>
 <li>Lists as arrays</li>
 <li>Indexing
@@ -79,46 +89,57 @@
 <li><strong>Difference between upper and lower bound is the number of values in the slice.</strong></li>
 </ul></li>
 </ul>
-<h2 id="indexing-and-slicing-a-list-example">Indexing and Slicing a List Example</h2>
-<div class="figure">
+</section>
+<section id="indexing-and-slicing-a-list-example" class="slide level2">
+<h1>Indexing and Slicing a List Example</h1>
+<figure>
 <img src="img/index_list_odd.png" />
-
-</div>
-<h2 id="indexing-and-slicing-a-list-example-1">Indexing and Slicing a List Example</h2>
-<div class="figure">
+</figure>
+</section>
+<section id="indexing-and-slicing-a-list-example-1" class="slide level2">
+<h1>Indexing and Slicing a List Example</h1>
+<figure>
 <img src="img/index_list_odd2.png" />
-
-</div>
-<h2 id="indexing-and-slicing-a-list-example-2">Indexing and Slicing a List Example</h2>
-<div class="figure">
+</figure>
+</section>
+<section id="indexing-and-slicing-a-list-example-2" class="slide level2">
+<h1>Indexing and Slicing a List Example</h1>
+<figure>
 <img src="img/slice_list_odd.png" />
-
-</div>
-<h2 id="indexing-and-slicing-a-list-example-3">Indexing and Slicing a List Example</h2>
-<div class="figure">
+</figure>
+</section>
+<section id="indexing-and-slicing-a-list-example-3" class="slide level2">
+<h1>Indexing and Slicing a List Example</h1>
+<figure>
 <img src="img/slice_list_string.png" />
-
-</div>
-<h2 id="using-python-libraries">Using Python libraries</h2>
+</figure>
+</section>
+<section id="using-python-libraries" class="slide level2">
+<h1>Using Python libraries</h1>
 <ul>
 <li>This introduction to Python is built around an end to end scientific example: data analysis</li>
 <li>What is a library (module) and its usage</li>
 <li>Reading data from a file</li>
 </ul>
-<h2 id="numpy-arrays">NumPy Arrays</h2>
+</section>
+<section id="numpy-arrays" class="slide level2">
+<h1>NumPy Arrays</h1>
 <ul>
 <li>NumPy arrays and operations on arrays of data</li>
 </ul>
-<div class="figure">
+<figure>
 <img src="img/numpy_array_dims.png" />
-
-</div>
-<h2 id="numpy-arrays-indexing-and-slicing">NumPy arrays: Indexing and Slicing</h2>
+</figure>
+</section>
+<section id="numpy-arrays-indexing-and-slicing" class="slide level2">
+<h1>NumPy arrays: Indexing and Slicing</h1>
 <ul>
 <li>Ways of selecting individual values and subsets of data</li>
 <li>One-dimensional arrays are simple; on the surface they act similarly to Python lists.</li>
 </ul>
-<h2 id="indexing-in-a-numpy-2d-array">Indexing in a NumPy 2D array</h2>
+</section>
+<section id="indexing-in-a-numpy-2d-array" class="slide level2">
+<h1>Indexing in a NumPy 2D array</h1>
 <ul>
 <li>The indices are (row, column) instead of (column, row).</li>
 <li>Example Patient inflammation data who were given treatment for arthritis:
@@ -127,18 +148,23 @@
 <li><strong>Columns:</strong> Represent successive days</li>
 </ul></li>
 </ul>
-<h2 id="cont..">Cont..</h2>
-<div class="figure">
+</section>
+<section id="cont.." class="slide level2">
+<h1>Cont..</h1>
+<figure>
 <img src="img/indexing2darray.png" />
-
-</div>
-<h2 id="data-visualisation-using-libraries">Data visualisation using libraries</h2>
+</figure>
+</section>
+<section id="data-visualisation-using-libraries" class="slide level2">
+<h1>Data visualisation using libraries</h1>
 <p><em>The purpose of computing is insight, not numbers, Richard Hamming.</em></p>
 <ul>
 <li>Best way to develop insight is often to visualise data.</li>
 <li>Plotting data using <code>matplotlib</code> library</li>
 </ul>
-<h2 id="control-flow-making-choices">Control Flow: Making choices</h2>
+</section>
+<section id="control-flow-making-choices" class="slide level2">
+<h1>Control Flow: Making choices</h1>
 <ul>
 <li>Write conditional statements including <code>if</code>, <code>elif</code> and <code>else</code></li>
 <li>A few things to note about the syntax:
@@ -149,7 +175,9 @@
 </ul></li>
 <li>Evaluate expressions containing <code>and</code> and <code>or</code></li>
 </ul>
-<h2 id="creating-functions">Creating Functions</h2>
+</section>
+<section id="creating-functions" class="slide level2">
+<h1>Creating Functions</h1>
 <ul>
 <li>Defining a function, the parameters that it takes, return value</li>
 <li>Test and debug a function</li>
@@ -157,13 +185,17 @@
 <li>Set default values for function parameters</li>
 <li>Divide programs into small, single-purpose functions</li>
 </ul>
-<h2 id="command-line-programs">Command-line Programs</h2>
+</section>
+<section id="command-line-programs" class="slide level2">
+<h1>Command-line Programs</h1>
 <ul>
 <li>Using values of command-line arguments in a program</li>
 <li>Handling flags and files separately in a command-line program</li>
 <li>Reading data from standard input in a program</li>
 </ul>
-<h2 id="wrap-up-challenge-connecting-the-dots">Wrap-up Challenge: Connecting the dots</h2>
+</section>
+<section id="wrap-up-challenge-connecting-the-dots" class="slide level2">
+<h1>Wrap-up Challenge: Connecting the dots</h1>
 <p><strong>Write a python script (function) for Fahrenheit to Celsius temperature conversion and stores the output in a file.</strong></p>
 <ul>
 <li>Hint (Tools to be used):
@@ -174,18 +206,27 @@
 <li>Using Fahr_to_kelvin() and Kelvin_to_celsius() functions</li>
 </ul></li>
 </ul>
-<h2 id="thank-you">Thank You!</h2>
-        </div>
-      </div>
-      </article>
-      <div class="footer">
-        This work is derived from prior works that are Copyright © <a href="http://software-carpentry.org">Software Carpentry</a>
-        <a class="label swc-blue-bg" href="LICENSE.html">License</a>
-        <a class="label swc-blue-bg" href="https://github.com/Southampton-RSG/2016-08-31-Southampton">Source</a>
-      </div>
+</section>
+<section id="thank-you" class="slide level2">
+<h1>Thank You!</h1>
+</section>
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
     </div>
-    <!-- Javascript placed at the end of the document so the pages load faster -->
-    <script src="http://software-carpentry.org/v5/js/jquery-1.9.1.min.js"></script>
-    <script src="css/bootstrap/bootstrap-js/bootstrap.js"></script>
-  </body>
+
+    <!-- footer -->
+    <p class="deck-status deck-progress-10"> <span class="deck-status-current"></span> / <span class="deck-status-total"></span> − <span class="var-title">will be replaced by the title</span></p>
+    <!-- progress bar -->
+    <div class="progress-bar" data-progress-size=":spe.bottom(0, 1) ; left: slide.left+'px' ; height: designRatio+'px'" data-progress="width: detail.p * slide.width" style="position: absolute;"> </div>
+
+    <!-- End extension snippets. -->
+  </div>
+
+</body>
 </html>
