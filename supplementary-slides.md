@@ -9,13 +9,16 @@ subtitle: Why Python?
 - Use a browser to go the following URL and download the materials to your machine:
 **http://users.ecs.soton.ac.uk/stc/COMP3207-materials.zip**
 - Copy the file to your home directory (or C:\ if on a Windows machine)
+
+## Extract the materials
+
 - Mac OS X or Linux: type in the following in a shell prompt:
-**cd /home/user** (or wherever your home directory is)
-**unzip COMP3207-materials.zip**
-**cd code**
+     + **cd /home/user** (your home directory)
+     + **unzip COMP3207-materials.zip**
+     + **cd code**
 - Windows: double click on the zip file to extract it, then run a command prompt and type:
-**cd C:\Users\username** (or wherever your home directory is)
-**cd code**
+     + **cd C:\\Users\\username** (your home directory)
+     + **cd code**
 
 ## Starting the Python Interpreter
 
