@@ -106,7 +106,7 @@ is a Python script.
 Once you've saved it, we can run it from the command line like this (from another terminal or shell, so we can see both the program and how it runs at once):
 
 ~~~ {.bash}
-$ python2.7 word_print.py
+$ python word_print.py
 ~~~
 
 Here we are asking Python to run our Python script. We should see the following:
@@ -143,7 +143,7 @@ print(word[3])
 Running it again...
 
 ~~~ {.bash}
-$ python2.7 word_print.py
+$ python word_print.py
 ~~~
 
 ...gives us the following:
@@ -247,7 +247,7 @@ print('There are', length, 'vowels')
 ~~~
 
 ~~~ {.bash}
-$ python2.7 count_vowels.py
+$ python count_vowels.py
 ~~~
 
 ~~~

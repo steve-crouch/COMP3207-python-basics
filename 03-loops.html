@@ -93,7 +93,7 @@ I love programming in Python!</code></pre>
 <span class="dt">print</span>(word[<span class="dv">3</span>])</code></pre>
 <p>Notice the file has <code>.py</code> at the end - this is a convention that indicates this is a Python script.</p>
 <p>Once you’ve saved it, we can run it from the command line like this (from another terminal or shell, so we can see both the program and how it runs at once):</p>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">python2.7</span> word_print.py</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">python</span> word_print.py</code></pre>
 <p>Here we are asking Python to run our Python script. We should see the following:</p>
 <pre class="output"><code>l
 e
@@ -111,7 +111,7 @@ d</code></pre>
 <span class="dt">print</span>(word[<span class="dv">2</span>])
 <span class="dt">print</span>(word[<span class="dv">3</span>])</code></pre>
 <p>Running it again…</p>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">python2.7</span> word_print.py</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">python</span> word_print.py</code></pre>
 <p>…gives us the following:</p>
 <pre class="output"><code>t
 i
@@ -164,7 +164,7 @@ tin</code></pre>
 <span class="kw">for</span> vowel in <span class="st">&#39;aeiou&#39;</span>:
     length = length + <span class="dv">1</span>
 <span class="dt">print</span>(<span class="st">&#39;There are&#39;</span>, length, <span class="st">&#39;vowels&#39;</span>)</code></pre>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">python2.7</span> count_vowels.py</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">python</span> count_vowels.py</code></pre>
 <pre><code>There are 5 vowels</code></pre>
 <p>It’s worth tracing the execution of this little program step by step. Since there are five characters in <code>'aeiou'</code>, the statement on line 3 will be executed five times. The first time around, <code>length</code> is zero (the value assigned to it on line 1) and <code>vowel</code> is <code>'a'</code>. The statement adds 1 to the old value of <code>length</code>, producing 1, and updates <code>length</code> to refer to that new value. The next time around, <code>vowel</code> is <code>'e'</code> and <code>length</code> is 1, so <code>length</code> is updated to be 2. After three more updates, <code>length</code> is 5; since there is nothing left in <code>'aeiou'</code> for Python to process, the loop finishes and the <code>print</code> statement on line 4 tells us our final answer.</p>
 <p>Note that a loop variable is just a variable that’s being used to record progress in a loop. It still exists after the loop is over, and we can re-use variables previously defined as loop variables as well:</p>

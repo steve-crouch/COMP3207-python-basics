@@ -23,7 +23,7 @@ But as you progress to more interesting and complex things you need to move over
 You start the Python interpreter from the command line or shell by:
 
 ~~~ {.bash}
-$ python2.7
+$ python
 ~~~
 
 And then you are presented with something like:
@@ -34,6 +34,8 @@ Python 2.7.10 (default, Oct 23 2015, 19:19:21)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ~~~
+
+If you find you have version 3 of Python coming up, try using `python2.7` at the prompt instead.
 
 And lo and behold! You are presented with yet another prompt.
 So, we're actually running a Python interpreter from the shell - it's only yet another program we can run from the shell after all.
@@ -57,7 +59,7 @@ Phew - back to the prompt!
 But let's get back to the Python interpreter and learn about variables in Python:
 
 ~~~ {.bash}
-$ python2.7
+$ python
 ~~~
 
 And we're back to the Python interpreter:

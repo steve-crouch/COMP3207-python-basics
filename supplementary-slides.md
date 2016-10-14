@@ -23,8 +23,8 @@ cd code
 ## Starting the Python Interpreter
 
 - The interpreter provides an interactive environment to play with the language
-- Mac/Linux: Open a terminal window and type **python2.7**
-- Windows: Open a command prompt and type **python2.7**
+- Mac/Linux: Open a terminal window and type **python**
+- Windows: Open a command prompt and type **python**
 - At the prompt type **print 'hello world!'**
   ![](img/hello.png)
 
