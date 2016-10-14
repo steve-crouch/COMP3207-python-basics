@@ -46,7 +46,7 @@ clean :
 preview : $(DST_ALL)
 
 # Pattern for slides (different parameters and template).
-motivation.html : motivation.md _layouts/slides.revealjs Makefile
+supplementary-slides.html : supplementary-slides.md _layouts/slides.revealjs Makefile
 	${PANDOC} -s -t revealjs --slide-level 2 \
 	    ${PANDOC_FLAGS} \
 	    --template=_layouts/slides \
