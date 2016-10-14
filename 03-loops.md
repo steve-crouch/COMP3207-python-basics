@@ -90,8 +90,7 @@ So, much like what we did with Bash, let's take a look at writing a Python scrip
 Suppose we want to print each character in the word "lead" on a line of its own.
 One way is to use four `print` statements.
 
-Let's write a simple Python program, using our Nano text editor, like we did
-with Bash. Let's start Nano (in a separate terminal or shell) and type the following, saving it in a file called `word_print.py`:
+Let's write a simple Python program, using a text editor, saving it in a file called `word_print.py` to our `code` directory in our home directory:
 
 ~~~ {.python}
 word = 'lead'
@@ -107,7 +106,7 @@ is a Python script.
 Once you've saved it, we can run it from the command line like this (from another terminal or shell, so we can see both the program and how it runs at once):
 
 ~~~ {.bash}
-$ python word_print.py
+$ python2.7 word_print.py
 ~~~
 
 Here we are asking Python to run our Python script. We should see the following:
@@ -144,7 +143,7 @@ print(word[3])
 Running it again...
 
 ~~~ {.bash}
-$ python word_print.py
+$ python2.7 word_print.py
 ~~~
 
 ...gives us the following:
@@ -248,7 +247,7 @@ print('There are', length, 'vowels')
 ~~~
 
 ~~~ {.bash}
-$ python count_vowels.py
+$ python2.7 count_vowels.py
 ~~~
 
 ~~~

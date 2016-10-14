@@ -27,8 +27,10 @@ Let's look at adding a feature to our code to perform a conversion
 from Fahrenheit to Celsius on the temperature data we are looking at:
 
 ~~~ {.python}
-celsius = ((data[3] - 32) * (5/9))
+celsius = ((data[3] - 32) * (5/9.0))
 ~~~
+
+Note we had to use `5/9.0` instead of just `5/9` to indicate we wanted Python to return a floating point number - otherwise we would have just got zero as a result!
 
 Now this wouldn't work as it is - we can't just apply this formula directly to 
 `data[3]` since it's a string. We need to convert it to a number first. To be 
@@ -213,7 +215,7 @@ Of course, we can also add more functions. Let's add another, which performs
 a conversion from Fahrenheight to Kelvin. The formula looks like this:
 
 ~~~ {.python}
-kelvin = ((fahr - 32) * (5/9)) + 273.15
+kelvin = ((fahr - 32) * (5/9.0)) + 273.15
 ~~~
 
 Now, we could just add a new function that does this exact conversion. But

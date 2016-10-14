@@ -20,17 +20,17 @@ gives you results back, but instead you use the Python language.
 It's a really quick and convenient way to get started with Python, particularly when learning about things like how to use variables, and it's good for playing around with what you can do and quickly testing small things.
 But as you progress to more interesting and complex things you need to move over to writing proper Python scripts, which we'll see later.
 
-You start the Python interpreter from the shell by:
+You start the Python interpreter from the command line or shell by:
 
 ~~~ {.bash}
-$ python
+$ python2.7
 ~~~
 
 And then you are presented with something like:
 
 ~~~ {.output}
-Python 3.4.3 |Anaconda 2.3.0 (x86_64)| (default, Mar  6 2015, 12:07:41) 
-[GCC 4.2.1 (Apple Inc. build 5577)] on darwin
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ~~~
@@ -52,19 +52,19 @@ Then you'll see:
 $ 
 ~~~
 
-Phew - back to the shell!
+Phew - back to the prompt!
 
 But let's get back to the Python interpreter and learn about variables in Python:
 
 ~~~ {.bash}
-$ python
+$ python2.7
 ~~~
 
 And we're back to the Python interpreter:
 
 ~~~ {.output}
-Python 3.4.3 |Anaconda 2.3.0 (x86_64)| (default, Mar  6 2015, 12:07:41) 
-[GCC 4.2.1 (Apple Inc. build 5577)] on darwin
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ~~~

@@ -47,7 +47,8 @@
 <p>We’ll see how we can amend our code to be better structured to further increase its readability, as well as its maintainability and reuse in other applications.</p>
 <h3 id="converting-from-fahrenheit-to-celsius">Converting from Fahrenheit to Celsius</h3>
 <p>Let’s look at adding a feature to our code to perform a conversion from Fahrenheit to Celsius on the temperature data we are looking at:</p>
-<pre class="sourceCode python"><code class="sourceCode python">celsius = ((data[<span class="dv">3</span>] - <span class="dv">32</span>) * (<span class="dv">5</span>/<span class="dv">9</span>))</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">celsius = ((data[<span class="dv">3</span>] - <span class="dv">32</span>) * (<span class="dv">5</span>/<span class="fl">9.0</span>))</code></pre>
+<p>Note we had to use <code>5/9.0</code> instead of just <code>5/9</code> to indicate we wanted Python to return a floating point number - otherwise we would have just got zero as a result!</p>
 <p>Now this wouldn’t work as it is - we can’t just apply this formula directly to <code>data[3]</code> since it’s a string. We need to convert it to a number first. To be specific, a floating point number.</p>
 <p>Fortunately, Python has some built-in functions to do these <code>type</code> conversions:</p>
 <pre class="sourceCode python"><code class="sourceCode python">climate_data = <span class="dt">open</span>(<span class="st">&#39;../data/sc_climate_data_10.csv&#39;</span>, <span class="st">&#39;r&#39;</span>)
@@ -169,7 +170,7 @@ is_palindrome(<span class="st">&quot;Deed&quot;</span>)
 </section>
 <h2 id="performing-more-temperature-conversions">Performing more temperature conversions</h2>
 <p>Of course, we can also add more functions. Let’s add another, which performs a conversion from Fahrenheight to Kelvin. The formula looks like this:</p>
-<pre class="sourceCode python"><code class="sourceCode python">kelvin = ((fahr - <span class="dv">32</span>) * (<span class="dv">5</span>/<span class="dv">9</span>)) + <span class="fl">273.15</span></code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">kelvin = ((fahr - <span class="dv">32</span>) * (<span class="dv">5</span>/<span class="fl">9.0</span>)) + <span class="fl">273.15</span></code></pre>
 <p>Now, we could just add a new function that does this exact conversion. But Kelvin uses the same units as Celsius, the part of the formula that converts to Celsius units is the same. We could just used our <code>fahr_to_celsius</code> function for the unit conversion, and add 273.15 to that to get Kelvin. So our new function becomes:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> fahr_to_kelvin(fahr):
     <span class="co"># apply standard Fahrenheit to Kelvin formula</span>
