@@ -8,7 +8,9 @@ subtitle: Why Python?
 
 - Use a browser to go the following URL and download the materials to your machine:
 **http://users.ecs.soton.ac.uk/stc/COMP3207-materials.zip**
-- Copy the file to your home directory (or C:\ if on a Windows machine)
+- Copy the file to your home directory
+     + Mac OS X, Linux: e.g. /home/user
+     + Windows: e.g. C:\\Users\\user
 
 ## Extract the materials
 
@@ -16,7 +18,7 @@ subtitle: Why Python?
      + **cd /home/user** (your home directory)
      + **unzip COMP3207-materials.zip**
      + **cd code**
-- Windows: double click on the zip file to extract it, then run a command prompt and type:
+- Windows: right click on the zip file, 'Extract All...', enter your home directory, then run a command prompt and type:
      + **cd C:\\Users\\username** (your home directory)
      + **cd code**
 
