@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Building programs with Python
+title: COMP3207 - Introduction to Python
 subtitle: Command-Line Programs
 minutes: 10
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Building programs with Python
+title: COMP3207 - Introduction to Python
 subtitle: Python Basics - Running the Python interpreter, Variables
 minutes: 15
 ---
