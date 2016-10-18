@@ -4,6 +4,13 @@ title: COMP3207 - Introduction to Python
 subtitle: Why Python?
 ---
 
+## Live coding status checker
+
+- Gives me an idea of how much time you need!
+- When we start a task, enter your name into
+     + **http://bit.ly/2dx48W6**
+- When you've finished the task, just remove it
+
 ## Download some materials
 
 - Use a browser to go the following URL and download the materials to your machine:
