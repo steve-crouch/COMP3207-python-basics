@@ -7,7 +7,7 @@ subtitle: Why Python?
 ## Download some materials
 
 - Use a browser to go the following URL and download the materials to your machine:
-**http://users.ecs.soton.ac.uk/stc/COMP3207-materials.zip**
+**http://bit.ly/2eia34u**
 - Copy the file to your home directory
      + Mac OS X, Linux: e.g. /home/user
      + Windows: e.g. C:\\Users\\user
