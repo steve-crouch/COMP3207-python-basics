@@ -27,7 +27,7 @@ subtitle: Why Python?
 - The interpreter provides an interactive environment to play with the language
 - Mac/Linux: Open a terminal window and type **python**
 - Windows: Open a command prompt and type **python**
-- At the prompt type **print 'hello world!'**
+- At the prompt type **'hello world!'**
   ![](img/hello.png)
 
 ## Control Flow: Repeating actions with loops
