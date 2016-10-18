@@ -29,6 +29,16 @@ subtitle: Why Python?
      + **cd C:\\Users\\username** (your home directory)
      + **cd code**
 
+## What we'll cover
+
+- Starting the interpreter
+- Variables
+- Lists
+- Loops
+- Processing data files
+- Making choices
+- Creating functions
+
 ## Starting the Python Interpreter
 
 - The interpreter provides an interactive environment to play with the language
