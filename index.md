@@ -19,3 +19,5 @@ title: COMP3207 - Introduction to Python
 *  [Python Style Guide](10-Python-style-guide.html)
 *  [Exercises](Challenges.html)
 *  [A quick Python language reference](../../reference.html)
+
+**NB:** This material is based on Python 2.7

@@ -34,7 +34,7 @@ called `climate_analysis.py`, and enter the following:
 climate_data = open('../data/sc_climate_data_10.csv', 'r')
 
 for line in climate_data:
-    print(line)
+    print line
 ~~~
 
 Using `open`, we first specify the file we wish to open, and then include how
@@ -83,7 +83,7 @@ We can remove them by stripping them out, using `rstrip`, a function
 that works on strings. We can use it like:
 
 ~~~ {.python}
-    print(line.rstrip())
+    print line.rstrip()
 ~~~
 
 So what's happening here?
@@ -128,7 +128,7 @@ So, let's try that out:
 climate_data = open('../data/sc_climate_data_10.csv', 'r')
 
 for line in climate_data:
-    print(line.rstrip())
+    print line.rstrip()
 ~~~
 
 And now we get:
@@ -175,7 +175,7 @@ for line in climate_data:
     data = line.split(',')
 
     # print 4th column (max temperature)
-    print('Max temperature', data[3])
+    print 'Max temperature', data[3]
 ~~~
 
 Now, it's important to remember that the column we want, the maximum 

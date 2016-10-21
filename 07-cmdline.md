@@ -57,7 +57,7 @@ for line in climate_data:
             celsius = temp_conversion.fahr_to_celsius(fahr)
             kelvin = temp_conversion.fahr_to_kelvin(fahr)
 
-            print('Max temperature in Celsius', celsius, 'Kelvin', kelvin)
+            print 'Max temperature in Celsius', celsius, 'Kelvin', kelvin
 ~~~
 
 And if we run that from the shell, with 
@@ -127,7 +127,7 @@ In this case, we can fix our code by adding in a condition:
             celsius = temp_conversion.fahr_to_celsius(fahr)
             kelvin = temp_conversion.fahr_to_kelvin(fahr)
 
-            print('Max temperature in Celsius', celsius, 'Kelvin', kelvin)
+            print 'Max temperature in Celsius', celsius, 'Kelvin', kelvin
 ~~~
 
 So in this special case, we ensure that we aren't processing these
@@ -184,10 +184,10 @@ more difficult.
 
 Assuming we've documented our code properly and the nature of the output
 is clearly understood, we can simplify the output by changing the
-`print()` statement:
+`print` statement:
 
 ~~~ {.python}
-            print(str(celsius)+", "+str(kelvin))
+            print str(celsius)+", "+str(kelvin)
 ~~~
 
 Here, we are using Python's `+` operator to **concatenate** strings 
@@ -206,7 +206,7 @@ But now we get a really odd error:
 ...
 Traceback (most recent call last):
   File "climate_analysis-12.py", line 25, in <module>
-    print(str(celsius)+", "+str(kelvin))
+    print str(celsius)+", "+str(kelvin)
 BrokenPipeError: [Errno 32] Broken pipe
 Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
 BrokenPipeError: [Errno 32] Broken pipe

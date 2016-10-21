@@ -18,7 +18,7 @@ Using the tools we've covered till now, repeating a simple statement many times 
 we can currently repeat easily is printing the exact same message multiple times. For example,
 
 ~~~{.python}
-print("I love programming in Python!\n"*10)
+print "I love programming in Python!\n"*10
 ~~~
 
 will produce the output:
@@ -94,10 +94,10 @@ Let's write a simple Python program, using a text editor, saving it in a file ca
 
 ~~~ {.python}
 word = 'lead'
-print(word[0])
-print(word[1])
-print(word[2])
-print(word[3])
+print word[0]
+print word[1]
+print word[2]
+print word[3]
 ~~~
 
 Notice the file has `.py` at the end - this is a convention that indicates this
@@ -134,10 +134,10 @@ We can easily demonstrate the second point by changing our script to the followi
 
 ~~~ {.python}
 word = 'tin'
-print(word[0])
-print(word[1])
-print(word[2])
-print(word[3])
+print word[0]
+print word[1]
+print word[2]
+print word[3]
 ~~~
 
 Running it again...
@@ -156,7 +156,7 @@ n
 ~~~ {.error}
 Traceback (most recent call last):
   File "loop_test.py", line 6, in <module>
-    print(word[3])
+    print word[3]
 IndexError: string index out of range
 ~~~
 
@@ -165,7 +165,7 @@ Here's a better approach:
 ~~~ {.python}
 word = 'lead'
 for char in word:
-    print(char)
+    print char
 ~~~
 
 ~~~
@@ -181,7 +181,7 @@ more robust as well:
 ~~~ {.python}
 word = 'oxygen'
 for char in word:
-    print(char)
+    print char
 ~~~
 
 ~~~
@@ -215,7 +215,7 @@ lists instead. So with one minor alteration:
 ~~~ {.python}
 word = ['oxygen', 'lead', 'tin']
 for char in word:
-    print(char)
+    print char
 ~~~
 
 ~~~
@@ -243,7 +243,7 @@ Let's look at a different program called `count_vowels.py`, with another loop th
 length = 0
 for vowel in 'aeiou':
     length = length + 1
-print('There are', length, 'vowels')
+print 'There are', length, 'vowels'
 ~~~
 
 ~~~ {.bash}
@@ -278,8 +278,8 @@ and we can re-use variables previously defined as loop variables as well:
 length = 0
 for vowel in 'aeiou':
     length = length + 1
-print('There are', length, 'vowels')
-print('The last vowel counted was', vowel)
+print 'There are', length, 'vowels'
+print 'The last vowel counted was', vowel
 ~~~
 
 ~~~
@@ -292,7 +292,7 @@ that Python actually has a built-in function to do it called `len`, which
 we can add to the end of our program:
 
 ~~~ {.python}
-print(len('aeiou'))
+print len('aeiou')
 ~~~
 
 ~~~
@@ -323,7 +323,7 @@ so we should always use it when we can.
 > Exponentiation is built into Python:
 >
 > ~~~ {.python}
-> print(5 ** 3)
+> print 5 ** 3
 >125
 > ~~~
 >

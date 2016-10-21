@@ -54,7 +54,7 @@ for line in climate_data:
         # apply standard Fahrenheit to Celsius formula
         celsius = ((fahr - 32) * (5/9)) 
 
-        print('Max temperature in Celsius', celsius)
+        print 'Max temperature in Celsius', celsius
 ~~~
 
 So we first convert our `data[3]` value to a floating point number using 
@@ -104,7 +104,7 @@ for line in climate_data:
 
         celsius = fahr_to_celsius(fahr)
 
-        print('Max temperature in Celsius', celsius)
+        print 'Max temperature in Celsius', celsius
 ~~~
 
 The definition opens with the word `def`,
@@ -170,7 +170,7 @@ And when we run it again --- which we most definitely should, to make sure it's 
 > multiply_by_10(2)
 > multiply_by_10(8)
 >
-> print(k)
+> print k
 > ~~~
 >
 > 1. 20
@@ -190,7 +190,7 @@ And when we run it again --- which we most definitely should, to make sure it's 
 > A call to your function should look like this:
 >
 > ~~~ {.python}
-> print(fence('name', '*'))
+> print fence('name', '*')
 > *name*
 > ~~~
 
@@ -261,7 +261,7 @@ for line in climate_data:
         celsius = fahr_to_celsius(fahr)
         kelvin = fahr_to_kelvin(fahr)
 
-        print('Max temperature in Celsius', celsius, 'Kelvin', kelvin)
+        print 'Max temperature in Celsius', celsius, 'Kelvin', kelvin
 ~~~
 
 Hmm... our code is starting to get a little large with these functions.
@@ -421,7 +421,7 @@ for line in climate_data:
         celsius = temp_conversion.fahr_to_celsius(fahr)
         kelvin = temp_conversion.fahr_to_kelvin(fahr)
 
-        print('Max temperature in Celsius', celsius, 'Kelvin', kelvin)
+        print 'Max temperature in Celsius', celsius, 'Kelvin', kelvin
 ~~~
 
 Like when we used the interpreter to ask for help on the `fahr_to_celsius()`

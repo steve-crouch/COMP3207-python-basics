@@ -90,7 +90,7 @@ weight_kg = 55
 Once a variable has a value, we can print it:
 
 ~~~ {.python}
-print(weight_kg)
+print weight_kg
 ~~~
 ~~~ {.output}
 55
@@ -99,7 +99,7 @@ print(weight_kg)
 and do arithmetic with it:
 
 ~~~ {.python}
-print('weight in pounds:', 2.2 * weight_kg)
+print 'weight in pounds:', 2.2 * weight_kg
 ~~~
 ~~~ {.output}
 weight in pounds: 121.0
@@ -113,7 +113,7 @@ We can change a variable's value by assigning it a new one:
 
 ~~~ {.python}
 weight_kg = 57.5
-print('weight in kilograms is now:', weight_kg)
+print 'weight in kilograms is now:', weight_kg
 ~~~
 ~~~ {.output}
 weight in kilograms is now: 57.5
@@ -138,7 +138,7 @@ let's store the subject's weight in pounds in a variable:
 
 ~~~ {.python}
 weight_lb = 2.2 * weight_kg
-print('weight in kilograms:', weight_kg, 'and in pounds:', weight_lb)
+print 'weight in kilograms:', weight_kg, 'and in pounds:', weight_lb
 ~~~
 ~~~ {.output}
 weight in kilograms: 57.5 and in pounds: 126.5
@@ -150,7 +150,7 @@ and then change `weight_kg`:
 
 ~~~ {.python}
 weight_kg = 100.0
-print('weight in kilograms is now:', weight_kg, 'and weight in pounds is still:', weight_lb)
+print 'weight in kilograms is now:', weight_kg, 'and weight in pounds is still:', weight_lb
 ~~~
 ~~~ {.output}
 weight in kilograms is now: 100.0 and weight in pounds is still: 126.5
@@ -193,7 +193,7 @@ Although we commonly refer to `variables` even in Python (because it is the comm
 >
 > ~~~{.python}
 > third, fourth = second, first
-> print(third, fourth)
+> print third, fourth
 > ~~~
 
 
