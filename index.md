@@ -1,6 +1,6 @@
 ---
 layout: page
-title: COMP3207 - Introduction to Python
+title: COMP3207 - Introduction to Python - A Basic Tutorial
 ---
 
 ## Topics
