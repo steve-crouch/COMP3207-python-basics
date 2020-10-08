@@ -19,10 +19,11 @@ We can ask Python to take different actions, depending on a condition, with an i
 ~~~ {.python}
 num = 37
 if num > 100:
-    print "greater"
+    print("greater")
 else:
-    print "not greater"
-print "done"
+    print("not greater")
+
+print("done")
 ~~~
 ~~~ {.output}
 not greater
@@ -47,8 +48,9 @@ Python simply does nothing if the test is false:
 num = 53
 print "before conditional..."
 if num > 100:
-    print "53 is greater than 100"
-print "...after conditional"
+    print("53 is greater than 100")
+
+print("...after conditional")
 ~~~
 ~~~ {.output}
 before conditional...
@@ -60,13 +62,12 @@ which is short for "else if" as shown in the example code chunk below:
 
 ~~~ {.python}
 num = -3
-    if num > 0:
-        print "Sign of a number:",num,"is:",1
-    elif num == 0:
-        print "Sign of a number",num,"is:",0
-    else:
-        print "Sign of a number",num, "is:",-1
-
+if num > 0:
+    print("Sign of a number:",num,"is:",1)
+elif num == 0:
+    print("Sign of a number",num,"is:",0)
+else:
+    print("Sign of a number",num, "is:",-1)
 ~~~
 ~~~ {.output}
 sign of a number -3 is:  -1
@@ -88,9 +89,9 @@ We can also combine tests using `and` and `or`.
 
 ~~~ {.python}
 if (1 > 0) and (-1 > 0):
-    print "both parts are true"
+    print("both parts are true")
 else:
-    print "one part is not true"
+    print("one part is not true")
 ~~~
 ~~~ {.output}
 one part is not true
@@ -100,7 +101,7 @@ while `or` is true if either part is true:
 
 ~~~ {.python}
 if (1 < 0) or ('left' < 'right'):
-    print "at least one test is true"
+    print("at least one test is true")
 ~~~
 ~~~ {.output}
 at least one test is true
@@ -120,11 +121,11 @@ In this case,
 > 
 > ~~~ {.python}
 > if 4 > 5:
->     print 'A'
+>     print('A')
 > elif 4 <= 5:
->     print 'B'
+>     print('B')
 > elif 4 < 5:
->     print 'C'
+>     print('C')
 > ~~~
 
 ## Climate Analysis: adding a condition to avoid printing comments
@@ -146,10 +147,10 @@ for line in climate_data:
         pass
     else:
         # print 4th column (max temperature)
-        print 'Max temperature', data[3]
+        print('Max temperature', data[3])
 ~~~
 
-~~~
+~~~ {.output}
 Max temperature 58.53
 Max temperature 58.60
 Max temperature 58.30

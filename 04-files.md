@@ -13,16 +13,16 @@ minutes: 15
 
 So far we've seen how to use and manipulate variables, and how to use loops in a script to process strings.
 But let's take a look at a more interesting use case - performing some
-temperature conversions on our CSV data file.
+temperature conversions on a CSV data file. You can find some example CSV files we'll use in the `COMP3207-python-basics-gh-pages/data` directory.
 
-We'll start out by looking at how to read the data file and print
+We'll start out by looking at how to read such a data file and print
 its contents in a script, and then modify our script to perform
 some conversions and output that.
 Along the way, we'll see how we can make our code more understandable to 
 others (as well as ourselves, when we might come back to it at a later date).
 
-<!-- ** Mention CSV specific library -->
-
+Ordinarily, we'd use a CSV reader library such as `csvreader`, but we'll do this ourselves
+in Python to illustrate putting the language constructs together to accomplish this task.
 
 ### Printing out the contents of a data file
 
@@ -34,7 +34,7 @@ called `climate_analysis.py`, and enter the following:
 climate_data = open('../data/sc_climate_data_10.csv', 'r')
 
 for line in climate_data:
-    print line
+    print(line)
 ~~~
 
 Using `open`, we first specify the file we wish to open, and then include how
@@ -52,7 +52,7 @@ $ python climate_analysis.py
 
 And we get the following output:
 
-~~~
+~~~ {.output}
 # POINT_X,POINT_Y,Min_temp_Jul_F,Max_temp_jul_F,Rainfall_jul_inch
 
 461196.8188,1198890.052,47.77,58.53,0.76
@@ -83,7 +83,7 @@ We can remove them by stripping them out, using `rstrip`, a function
 that works on strings. We can use it like:
 
 ~~~ {.python}
-    print line.rstrip()
+    print(line.rstrip())
 ~~~
 
 So what's happening here?
@@ -128,12 +128,12 @@ So, let's try that out:
 climate_data = open('../data/sc_climate_data_10.csv', 'r')
 
 for line in climate_data:
-    print line.rstrip()
+    print(line.rstrip())
 ~~~
 
 And now we get:
 
-~~~
+~~~ {.output}
 # POINT_X,POINT_Y,Min_temp_Jul_F,Max_temp_jul_F,Rainfall_jul_inch
 461196.8188,1198890.052,47.77,58.53,0.76
 436196.8188,1191890.052,47.93,58.60,0.83
@@ -175,7 +175,7 @@ for line in climate_data:
     data = line.split(',')
 
     # print 4th column (max temperature)
-    print 'Max temperature', data[3]
+    print('Max temperature', data[3])
 ~~~
 
 Now, it's important to remember that the column we want, the maximum 
@@ -202,7 +202,7 @@ have made a note to that effect in a *comment*.
 
 And we get:
 
-~~~
+~~~ {.output}
 Max temperature Max_temp_jul_F
 Max temperature 58.53
 Max temperature 58.60

@@ -10,6 +10,10 @@ minutes: 15
 > *   Introduction to Python variables
 > *   Creating and Assigning values to variables
 
+## Preparation
+
+
+
 ## Running the Python interpreter
 
 Normally, you write Python programs in a Python script, which is basically a file of Python commands you can run.
@@ -29,13 +33,13 @@ $ python
 And then you are presented with something like:
 
 ~~~ {.output}
-Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
-[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ~~~
 
-If you find you have version 3 of Python coming up, try using `python2.7` at the prompt instead.
+If you find you have version 2 of Python coming up, try using `python3` at the prompt instead.
 
 And lo and behold! You are presented with yet another prompt.
 So, we're actually running a Python interpreter from the shell - it's only yet another program we can run from the shell after all.
@@ -65,8 +69,8 @@ $ python
 And we're back to the Python interpreter:
 
 ~~~ {.output}
-Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
-[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ~~~
@@ -90,7 +94,7 @@ weight_kg = 55
 Once a variable has a value, we can print it:
 
 ~~~ {.python}
-print weight_kg
+print(weight_kg)
 ~~~
 ~~~ {.output}
 55
@@ -99,7 +103,7 @@ print weight_kg
 and do arithmetic with it:
 
 ~~~ {.python}
-print 'weight in pounds:', 2.2 * weight_kg
+print('weight in pounds:', 2.2 * weight_kg)
 ~~~
 ~~~ {.output}
 weight in pounds: 121.0
@@ -113,7 +117,7 @@ We can change a variable's value by assigning it a new one:
 
 ~~~ {.python}
 weight_kg = 57.5
-print 'weight in kilograms is now:', weight_kg
+print('weight in kilograms is now:', weight_kg)
 ~~~
 ~~~ {.output}
 weight in kilograms is now: 57.5
@@ -138,7 +142,7 @@ let's store the subject's weight in pounds in a variable:
 
 ~~~ {.python}
 weight_lb = 2.2 * weight_kg
-print 'weight in kilograms:', weight_kg, 'and in pounds:', weight_lb
+print('weight in kilograms:', weight_kg, 'and in pounds:', weight_lb)
 ~~~
 ~~~ {.output}
 weight in kilograms: 57.5 and in pounds: 126.5
@@ -150,7 +154,7 @@ and then change `weight_kg`:
 
 ~~~ {.python}
 weight_kg = 100.0
-print 'weight in kilograms is now:', weight_kg, 'and weight in pounds is still:', weight_lb
+print('weight in kilograms is now:', weight_kg, 'and weight in pounds is still:', weight_lb)
 ~~~
 ~~~ {.output}
 weight in kilograms is now: 100.0 and weight in pounds is still: 126.5
@@ -193,7 +197,7 @@ Although we commonly refer to `variables` even in Python (because it is the comm
 >
 > ~~~{.python}
 > third, fourth = second, first
-> print third, fourth
+> print(third, fourth)
 > ~~~
 
 

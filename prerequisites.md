@@ -38,8 +38,8 @@ To exit nano press CTRL+X (you might be prompted you to save or discard modified
 
 ## Python
 
-We use Python 2.7 for this introduction, as it's required to use the Google App Engine.
+These materials assume use of Python 3.7 or Python 3.8, as Google App Engine supports these.
 
-The "Python Anaconda" installation provides everything Python-related you will need for the workshop. To install Anaconda, go to the link below and install version 2.7 (not 3.5!) - scroll down the page a bit for the link:
+The "Python Anaconda" installation provides everything Python-related you will need for the workshop. To install Anaconda, go to the link below and install version 3.8 - scroll down the page to the bottom for the link:
 
-https://www.continuum.io/downloads
+https://www.anaconda.com/products/individual

@@ -30,8 +30,7 @@ To define a list we simply write a comma separated list of items in square brack
 
 ~~~{.python}
 odds = [1, 3, 5, 7, 9, 11, 15]
-print 'Odds are:', odds
-
+print('Odds are:', odds)
 ~~~
 
 ~~~{.output}
@@ -53,7 +52,7 @@ the index is how many steps we have to take from the start to get the item we wa
 We select individual elements from lists by indexing them:
 
 ~~~{.python}
-print 'first and last:', odds[0], odds[-1]
+print('first and last:', odds[0], odds[-1])
 ~~~
 
 will print first and last elements, i.e. value 1 and 7 in this case. 
@@ -122,8 +121,8 @@ We can take slices of character strings as well:
 
 ~~~ {.python}
 element = 'oxygen'
-print 'first three characters:', element[0:3]
-print 'last three characters:', element[3:6]
+print('first three characters:', element[0:3])
+print('last three characters:', element[3:6])
 ~~~
 
 ~~~ {.output}
@@ -174,9 +173,9 @@ For example:
 
 ~~~ {.python}
 names = ['Newton', 'Darwing', 'Turing'] # typo in Darwin's name
-print 'names is originally:', names
+print('names is originally:', names)
 names[1] = 'Darwin' # correct the name
-print 'final value of names:', names
+print('final value of names:', names)
 ~~~
 
 ~~~ {.output}
@@ -226,7 +225,7 @@ individual elements:
 
 ~~~ {.python}
 odds.append(21)
-print 'odds after adding a value:', odds
+print('odds after adding a value:', odds)
 ~~~
 ~~~ {.output}
 odds after adding a value: [17, 19, 5, 7, 9, 11, 13, 15, 21]
@@ -234,7 +233,7 @@ odds after adding a value: [17, 19, 5, 7, 9, 11, 13, 15, 21]
 
 ~~~ {.python}
 del odds[0]
-print 'odds after removing the first element:', odds
+print('odds after removing the first element:', odds)
 ~~~
 ~~~ {.output}
 odds after removing the first element: [19, 5, 7, 9, 11, 13, 15, 21]
@@ -242,7 +241,7 @@ odds after removing the first element: [19, 5, 7, 9, 11, 13, 15, 21]
 
 ~~~ {.python}
 odds.reverse()
-print 'odds after reversing:', odds
+print('odds after reversing:', odds)
 ~~~
 ~~~ {.output}
 odds after reversing: [21, 15, 13, 11, 9, 7, 5, 19]
@@ -256,8 +255,8 @@ If we make a list and (attempt to) copy it then modify in place, we can cause al
 odds = [1, 3, 5, 7]
 primes = odds
 primes += [2]
-print 'primes:', primes
-print 'odds:', odds
+print('primes:', primes)
+print('odds:', odds)
 ~~~
 ~~~ {.output}
 primes: [1, 3, 5, 7, 2]
@@ -271,8 +270,8 @@ If all we want to do is copy a (simple) list, we can use the list() command, so 
 odds = [1, 3, 5, 7]
 primes = list(odds)
 primes += [2]
-print 'primes:', primes
-print 'odds:', odds
+print('primes:', primes)
+print('odds:', odds)
 ~~~
 ~~~ {.output}
 primes: [1, 3, 5, 7, 2]

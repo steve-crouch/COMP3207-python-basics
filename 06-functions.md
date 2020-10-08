@@ -54,7 +54,7 @@ for line in climate_data:
         # apply standard Fahrenheit to Celsius formula
         celsius = ((fahr - 32) * (5/9)) 
 
-        print 'Max temperature in Celsius', celsius
+        print('Max temperature in Celsius', celsius)
 ~~~
 
 So we first convert our `data[3]` value to a floating point number using 
@@ -63,7 +63,7 @@ the structure of your own data, you may find you end up doing this a lot!
 
 So now we get:
 
-~~~
+~~~ {.output}
 Max temperature in Celsius 14.73888888888889
 Max temperature in Celsius 14.777777777777779
 Max temperature in Celsius 14.61111111111111
@@ -104,7 +104,7 @@ for line in climate_data:
 
         celsius = fahr_to_celsius(fahr)
 
-        print 'Max temperature in Celsius', celsius
+        print('Max temperature in Celsius', celsius)
 ~~~
 
 The definition opens with the word `def`,
@@ -138,7 +138,7 @@ Note that the function is at the top of the script. This is because Python
 reads the script from top to bottom, and if we called the function before we
 defined it, Python wouldn't know about it and throw an error like this:
 
-~~~
+~~~ {.error}
 Traceback (most recent call last):
   File "climate_analysis-6.py", line 13, in <module>
     celsius = fahr_to_celsius(fahr)
@@ -170,7 +170,7 @@ And when we run it again --- which we most definitely should, to make sure it's 
 > multiply_by_10(2)
 > multiply_by_10(8)
 >
-> print k
+> print(k)
 > ~~~
 >
 > 1. 20
@@ -190,7 +190,7 @@ And when we run it again --- which we most definitely should, to make sure it's 
 > A call to your function should look like this:
 >
 > ~~~ {.python}
-> print fence('name', '*')
+> print(fence('name', '*'))
 > *name*
 > ~~~
 
@@ -261,7 +261,22 @@ for line in climate_data:
         celsius = fahr_to_celsius(fahr)
         kelvin = fahr_to_kelvin(fahr)
 
-        print 'Max temperature in Celsius', celsius, 'Kelvin', kelvin
+        print('Max temperature in Celsius', celsius, 'Kelvin', kelvin)
+~~~
+
+Rerunning it gives us:
+
+~~~
+Max temperature in Celsius 14.73888888888889 Kelvin 287.88888888888886
+Max temperature in Celsius 14.777777777777779 Kelvin 287.92777777777775
+Max temperature in Celsius 14.61111111111111 Kelvin 287.76111111111106
+Max temperature in Celsius 13.838888888888887 Kelvin 286.9888888888889
+Max temperature in Celsius 15.477777777777778 Kelvin 288.62777777777774
+Max temperature in Celsius 14.972222222222225 Kelvin 288.1222222222222
+Max temperature in Celsius 14.85 Kelvin 288.0
+Max temperature in Celsius 16.33888888888889 Kelvin 289.4888888888889
+Max temperature in Celsius 16.261111111111113 Kelvin 289.4111111111111
+Max temperature in Celsius 16.33888888888889 Kelvin 289.4888888888889
 ~~~
 
 Hmm... our code is starting to get a little large with these functions.
@@ -346,7 +361,7 @@ from the above:
 
 So here's the help we get for the module:
 
-~~~
+~~~ {.output}
 Help on module temp_conversion:
 
 NAME
@@ -370,7 +385,7 @@ FUNCTIONS
         fahr -- the temperature in Fahrenheit
 
 FILE
-    /Users/user/Projects/RSG/Training/2016-08-31-Southampton/novice/python/code/temp_conversion.py
+    /Users/user/Projects/Teaching/COMP3207/COMP3207-python-basics-gh-pages/code/temp_conversion.py
 ~~~
 
 Here, note we've used the term `library` in the code documentation. This
@@ -388,7 +403,7 @@ to do this to specify that the function we want help on is within the
 
 So we get:
 
-~~~
+~~~ {.output}
 Help on function fahr_to_celsius in module temp_conversion:
 
 fahr_to_celsius(fahr)
@@ -421,7 +436,7 @@ for line in climate_data:
         celsius = temp_conversion.fahr_to_celsius(fahr)
         kelvin = temp_conversion.fahr_to_kelvin(fahr)
 
-        print 'Max temperature in Celsius', celsius, 'Kelvin', kelvin
+        print('Max temperature in Celsius', celsius, 'Kelvin', kelvin)
 ~~~
 
 Like when we used the interpreter to ask for help on the `fahr_to_celsius()`

@@ -12,49 +12,6 @@ minutes: 15
 > *   Track changes to other variables as they are updated by a for loop.
 > *   Write as basic Python script that uses loops
 
-### Using loops to repeat things
-
-Using the tools we've covered till now, repeating a simple statement many times is tedious. The only item
-we can currently repeat easily is printing the exact same message multiple times. For example,
-
-~~~{.python}
-print "I love programming in Python!\n"*10
-~~~
-
-will produce the output:
-
-~~~{.output}
-I love programming in Python!
-I love programming in Python!
-I love programming in Python!
-I love programming in Python!
-I love programming in Python!
-I love programming in Python!
-I love programming in Python!
-I love programming in Python!
-I love programming in Python!
-I love programming in Python!
-~~~
-Imagine that we wanted to number this list so that we printed:
-
-~~~{.output}
-1. I love programming in Python!
-2. I love programming in Python!
-3. I love programming in Python!
-4. I love programming in Python!
-5. I love programming in Python!
-6. I love programming in Python!
-7. I love programming in Python!
-8. I love programming in Python!
-9. I love programming in Python!
-10. I love programming in Python!
-~~~
-
-Now, the times operator `*` is no longer capable of allowing us to produce this output. Fortunately, 
-Python provides us with multiple general tools for repetition where we'll simply specify which statements 
-we want to be repeated and a way to determine how many times to repeat those statements.
-
-To do that, we'll have to teach the computer how to repeat things.
 
 ### Shortcomings of the interpreter
 
@@ -75,15 +32,17 @@ So, much like what we did with Bash, let's take a look at writing a Python scrip
 > C). The former type were scripting languages, and the latter were programming
 > languages. But more recently, the lines are beginning to blur.
 > 
-> Python can be both! You can compile Python, but you don't need to.
+> Python can be both! You can compile Python explicitly, but you don't need to - 
+> Python implicitly does that for us in the background at runtime.
 > In addition, Python can fulfil the role of a scripting language in similar
 > ways to Bash, including that it's source code can be run on a multitude
 > of supporting platforms without needing to be explicitly compiled. But it
 > can also go much further, and it's designed so you can pretty much write 
 > anything with it.
 >
-> For that reason, it's considered a programming language, but to add to the
-> confusion, we refer to Python programs generally as scripts!
+> For that reason, it's considered a programming language, but because it presents
+> many of the features and benefits of an interpreted language - and just to add to the
+> confusion - we refer to Python programs generally as scripts!
 
 ### Our first Python script!
 
@@ -94,10 +53,10 @@ Let's write a simple Python program, using a text editor, saving it in a file ca
 
 ~~~ {.python}
 word = 'lead'
-print word[0]
-print word[1]
-print word[2]
-print word[3]
+print(word[0])
+print(word[1])
+print(word[2])
+print(word[3])
 ~~~
 
 Notice the file has `.py` at the end - this is a convention that indicates this
@@ -134,10 +93,10 @@ We can easily demonstrate the second point by changing our script to the followi
 
 ~~~ {.python}
 word = 'tin'
-print word[0]
-print word[1]
-print word[2]
-print word[3]
+print(word[0])
+print(word[1])
+print(word[2])
+print(word[3])
 ~~~
 
 Running it again...
@@ -155,8 +114,8 @@ n
 ~~~
 ~~~ {.error}
 Traceback (most recent call last):
-  File "loop_test.py", line 6, in <module>
-    print word[3]
+  File "loop_test.py", line 5, in <module>
+    print(word[3])
 IndexError: string index out of range
 ~~~
 
@@ -165,10 +124,10 @@ Here's a better approach:
 ~~~ {.python}
 word = 'lead'
 for char in word:
-    print char
+    print(char)
 ~~~
 
-~~~
+~~~ {.output}
 l
 e
 a
@@ -181,10 +140,10 @@ more robust as well:
 ~~~ {.python}
 word = 'oxygen'
 for char in word:
-    print char
+    print(char)
 ~~~
 
-~~~
+~~~ {.output}
 o
 x
 y
@@ -215,10 +174,10 @@ lists instead. So with one minor alteration:
 ~~~ {.python}
 word = ['oxygen', 'lead', 'tin']
 for char in word:
-    print char
+    print(char)
 ~~~
 
-~~~
+~~~ {.output}
 oxygen
 lead
 tin
@@ -243,14 +202,14 @@ Let's look at a different program called `count_vowels.py`, with another loop th
 length = 0
 for vowel in 'aeiou':
     length = length + 1
-print 'There are', length, 'vowels'
+print('There are', length, 'vowels')
 ~~~
 
 ~~~ {.bash}
 $ python count_vowels.py
 ~~~
 
-~~~
+~~~ {.output}
 There are 5 vowels
 ~~~
 
@@ -268,7 +227,7 @@ After three more updates,
 `length` is 5;
 since there is nothing left in `'aeiou'` for Python to process,
 the loop finishes
-and the `print` statement on line 4 tells us our final answer.
+and the `print()` function on line 4 tells us our final answer.
 
 Note that a loop variable is just a variable that's being used to record progress in a loop.
 It still exists after the loop is over,
@@ -278,11 +237,11 @@ and we can re-use variables previously defined as loop variables as well:
 length = 0
 for vowel in 'aeiou':
     length = length + 1
-print 'There are', length, 'vowels'
-print 'The last vowel counted was', vowel
+print('There are', length, 'vowels')
+print('The last vowel counted was', vowel)
 ~~~
 
-~~~
+~~~ {.output}
 There are 5 vowels
 The last vowel counted was u
 ~~~
@@ -292,10 +251,10 @@ that Python actually has a built-in function to do it called `len`, which
 we can add to the end of our program:
 
 ~~~ {.python}
-print len('aeiou')
+print(len('aeiou'))
 ~~~
 
-~~~
+~~~ {.output}
 5
 ~~~
 
@@ -303,32 +262,3 @@ print len('aeiou')
 and much easier to read than a two-line loop;
 it will also give us the length of many other things that we haven't met yet,
 so we should always use it when we can.
-
-
-> ## From 1 to N {.challenge}
->
-> Python has a built-in function called `range` that creates a list of numbers:
-> `range(3)` produces `[0, 1, 2]`, `range(2, 5)` produces `[2, 3, 4]`.
-> Using `range`,
-> write a loop to print the first 3 natural numbers:
->
-> ~~~ {.python}
-> 1
-> 2
-> 3
-> ~~~
-
-> ## Computing powers with loops {.challenge}
->
-> Exponentiation is built into Python:
->
-> ~~~ {.python}
-> print 5 ** 3
->125
-> ~~~
->
->Write a loop that calculates the same result as `5 ** 3` using multiplication (and without exponentiation).
-
->## Reverse a string {.challenge}
->
-> Write a loop that takes a string, and produces a new string with the characters in reverse order, so `Newton` becomes `notweN`.
